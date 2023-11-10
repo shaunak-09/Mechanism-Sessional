@@ -31,7 +31,13 @@
                     <hr class="mt-0">
 
                     <div class="row">
-                        <div class="col-xl-12 col-md-12">
+                        <label style="width: 115px;">Delta Angle (δ)</label>
+                        <span id="delta_val" class="border rounded bg-ligth">10º</span>
+
+  <input type="range" id="delta" class="form-range pt-3 ms-3" style="width: 170px;" min="-30" max="30" value="10" step="1" oninput="setdelta();">
+                            <!-- <button data-bs-toggle="tooltip" data-bs-placement="top" title="Controls the positioning of the Area wiped.">
+                            <i>i</i></button><br> -->
+                        <div class="col-xl-12 col-md-12" style="display: none;">
 
                             <h5 style="color: rgb(226, 47, 47);"><u>Actuator (Motor)</u> :-</h5>
 
@@ -45,35 +51,35 @@
 
                             <label>Motor Bar Length</label><b>:</b>
                             <span id="motor_bar_val" class="border rounded bg-ligth">0.6 m</span>
-                            <input type="range" id="motor_bar" class="form-range pt-3 ms-3" style="width: 170px;" min="0.1" max="3" value="0.6" step="0.1" oninput="setmotor();"><br>
+                            <!-- <input type="range" id="motor_bar" class="form-range pt-3 ms-3" style="width: 170px;" min="0.1" max="3" value="0.6" step="0.1" oninput="setmotor();"><br> -->
 
                             <label>Coupler Bar Length</label><b>:</b>
                             <span id="coupler_bar_val" class="border rounded bg-ligth">2.8 m</span>
-                            <input type="range" id="coupler_bar" class="form-range pt-3 ms-3" style="width: 170px;" min="0.1" max="3" value="2.8" step="0.1" oninput="setcoupler();"><br>
+                            <!-- <input type="range" id="coupler_bar" class="form-range pt-3 ms-3" style="width: 170px;" min="0.1" max="3" value="2.8" step="0.1" oninput="setcoupler();"><br> -->
 
                             <label>Output Bar Length</label><b>:</b>
                             <span id="output_bar_val" class="border rounded bg-ligth">1.6 m</span>
-                            <input type="range" id="output_bar" class="form-range pt-3 ms-3" style="width: 170px;" min="0.1" max="3" value="1.6" step="0.1" oninput="setoutput();"><br>
+                            <!-- <input type="range" id="output_bar" class="form-range pt-3 ms-3" style="width: 170px;" min="0.1" max="3" value="1.6" step="0.1" oninput="setoutput();"><br> -->
 
                             <label>Base Bar Length</label><b>:</b>
                             <span id="base_bar_val" class="border rounded bg-ligth"></span>
                             <input type="range" id="base_bar" class="form-range pt-3 ms-3" style="width: 170px;" min="0.1" max="4" value="" step="0.1" disabled>
-                            <button data-bs-toggle="tooltip" data-bs-placement="top" title="This length is fixed.">
-                            <i>i</i></button><br>
+                            <!-- <button data-bs-toggle="tooltip" data-bs-placement="top" title="This length is fixed.">
+                            <i>i</i></button><br> -->
 
                             <hr>
 
                             <h5 style="color: rgb(226, 47, 47);"><u>Wiper</u> :-</h5>
 
                             <label style="width: 115px;">Delta Angle (δ)</label>
-                            <div class="d-inline-block form-check form-switch" style="vertical-align: middle;" >
+                            <!-- <div class="d-inline-block form-check form-switch" style="vertical-align: middle;" >
                                 <input class="form-check-input" type="checkbox" checked onclick="animPD.toggleOption('delta_label')">
                             </div>
-                            <b style="margin-left: -8px;" >:</b>
+                            <b style="margin-left: -8px;" >:</b> -->
                             <span id="delta_val" class="border rounded bg-ligth">10º</span>
-                            <input type="range" id="delta" class="form-range pt-3 ms-3" style="width: 170px;" min="-30" max="30" value="10" step="1" oninput="setdelta();">
+                            <!-- <input type="range" id="delta" class="form-range pt-3 ms-3" style="width: 170px;" min="-30" max="30" value="10" step="1" oninput="setdelta();">
                             <button data-bs-toggle="tooltip" data-bs-placement="top" title="Controls the positioning of the Area wiped.">
-                            <i>i</i></button><br>
+                            <i>i</i></button><br> -->
 
                             <label>Wiper Bar Length</label><b>:</b>
                             <span id="wiper_bar_val" class="border rounded bg-ligth">4 m</span>
