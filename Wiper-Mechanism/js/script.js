@@ -130,7 +130,7 @@ animPD = new PrairieDrawAnim("wiper", function(t) {
 
     //base bar
     this.save();
-    this.setProp("shapeOutlineColor", "grey");
+    this.setProp("shapeOutlineColor", "red");
     this.setProp("shapeStrokePattern", "dashed");
     this.line(pivot_right, pivot_motor);
     this.restore();
@@ -210,7 +210,7 @@ animPD = new PrairieDrawAnim("wiper", function(t) {
         this.save();
         this.rotate(ref_angle-O4);
         this.setProp("arrowLineWidthPx", 2);
-        this.setProp("shapeOutlineColor", "red");
+        this.setProp("shapeOutlineColor", "blue");
         this.setProp("shapeStrokePattern", "dashed");
         this.line($V([-BO4+1,0]), $V([1.5,0]));
         this.rotate(delta_angle);

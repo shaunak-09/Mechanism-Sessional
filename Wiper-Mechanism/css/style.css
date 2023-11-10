@@ -20,7 +20,12 @@
 canvas {
     border: 1px solid black;
     width: 690px;
-    height: 1000px;
+    height: 90vh;
+}
+.cont1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 label {
     width: 155px;
@@ -53,6 +58,11 @@ button[data-bs-toggle="tooltip"]{
     height: 23.5px;
 
 }
+/* .canvas-wiper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 hr{
     margin-bottom: 5px;
 }
