@@ -35,8 +35,8 @@ document.getElementById("base_bar_val").innerHTML = `${length_base.toFixed(2)} m
 animPD = new PrairieDrawAnim("wiper", function(t) {
 
     //SET UP PRAIRIEDRAW
-    this.setUnits(10, 15);
-    this.translate($V([0,1.5]));
+    this.setUnits(10, 10);
+    this.translate($V([0,-1]));
     this.setProp("arrowLineWidthPx",3);
     this.addOption("velocity",false);
     this.addOption("acceleration",false);
