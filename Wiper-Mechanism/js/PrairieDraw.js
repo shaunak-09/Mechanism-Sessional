@@ -97,7 +97,7 @@ PrairieDraw.prototype._initProps = function() {
     this._props.viewAngleZMin = -Infinity;
     this._props.viewAngleZMax = Infinity;
 
-    this._props.arrowLineWidthPx = 2;
+    this._props.arrowLineWidthPx = 5;
     this._props.arrowLinePattern = 'solid';
     this._props.arrowheadLengthRatio = 7; // arrowheadLength / arrowLineWidth
     this._props.arrowheadWidthRatio = 0.3; // arrowheadWidth / arrowheadLength
@@ -109,13 +109,13 @@ PrairieDraw.prototype._initProps = function() {
 
     this._props.pointRadiusPx = 2;
 
-    this._props.shapeStrokeWidthPx = 2;
+    this._props.shapeStrokeWidthPx = 3;
     this._props.shapeStrokePattern = 'solid';
     this._props.shapeOutlineColor = "rgb(0, 0, 0)";
-    this._props.shapeInsideColor = "rgb(255, 255, 255)";
+    this._props.shapeInsideColor = "rgb(0, 0, 0,0.2)";
 
     this._props.hiddenLineDraw = true;
-    this._props.hiddenLineWidthPx = 2;
+    this._props.hiddenLineWidthPx = 4;
     this._props.hiddenLinePattern = "dashed";
     this._props.hiddenLineColor = "rgb(0, 0, 0)";
 
