@@ -311,8 +311,8 @@ animPD = new PrairieDrawAnim("wiper", function(t) {
     var speedHistory = this.history("speed", 0.04, maxtime, t, dataWiper.diff.C.modulus().toFixed(2));            
     var accHistory = this.history("acc", 0.04, maxtime, t, dataWiper.ddiff.C.modulus().toFixed(1));
 
-    this.plotHistory($V([-4.6, -5.5]), $V([9.5, 2]), $V([maxtime, 1.5 * speedMax]), Math.min(t, 0.95 * maxtime), "|v|", speedHistory, "velocity");
-    this.plotHistory($V([-4.6, -8.2]), $V([9.5, 2]), $V([maxtime, 1.5 * accMax]), Math.min(t, 0.95 * maxtime), "|a|", accHistory, "rotation");            
+    // this.plotHistory($V([-4.6, -5.5]), $V([9.5, 2]), $V([maxtime, 1.5 * speedMax]), Math.min(t, 0.95 * maxtime), "|v|", speedHistory, "velocity");
+    // this.plotHistory($V([-4.6, -8.2]), $V([9.5, 2]), $V([maxtime, 1.5 * accMax]), Math.min(t, 0.95 * maxtime), "|a|", accHistory, "rotation");            
    
     temp_time++;
     time = t;
