@@ -328,7 +328,7 @@ function update_butt()
     }
     else{
         anim_butt.innerHTML = "Start animation";
-        anim_butt.classList = "btn btn-success w-50 my-2 mx-2";
+        anim_butt.classList = "btn btn-primary w-50 my-2 mx-2";
     }
 }
 
